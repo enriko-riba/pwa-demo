@@ -14,7 +14,7 @@
             "request": "launch",
             "port": 9222,
             "sourceMaps": true,
-            "webRoot": "${workspaceRoot}",
+            "webRoot": "${workspaceRoot}/dist",
             "url": "http://127.0.0.1:8080"
         },
         {

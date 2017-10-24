@@ -1,0 +1,20 @@
+{
+  "name": "progressivewebapp",
+  "version": "1.0.0",
+  "description": "web demo",
+  "main": "app.js",
+  "dependencies": {
+    "firebase": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/firebase": "^2.4.32",
+    "@types/howler": "^2.0.5",
+    "@types/jquery": "^3.2.1",
+    "system": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Enriko Riba",
+  "license": "MIT"
+}

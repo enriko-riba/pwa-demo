@@ -1,0 +1,30 @@
+{
+    "short_name": "ERI Demo",
+    "name": "Enriko's Hello World demo",
+    "icons": [
+      {
+        "src": "/assetshw-icon-96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "/assets/icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/icon-256x256.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "/assets/icon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "display": "standalone",
+    "background_color": "#649dcc",
+    "theme_color": "#e6ffe4",
+    "start_url": "index.html"
+}

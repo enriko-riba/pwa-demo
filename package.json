@@ -10,10 +10,13 @@
     "@types/firebase": "^2.4.32",
     "@types/howler": "^2.0.5",
     "@types/jquery": "^3.2.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
     "system": "^2.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build"
   },
   "author": "Enriko Riba",
   "license": "MIT"

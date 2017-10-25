@@ -1,4 +1,5 @@
-var CACHE_NAME = 'hw005';
+var CACHE_NAME = 'hw008';
+
 var urlsToCache = [
   '/',
   'index.html',

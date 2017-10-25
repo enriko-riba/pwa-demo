@@ -12,8 +12,8 @@ button {
 }
 
 img {
-    width: 98%;
-    margin: 10px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .loader {

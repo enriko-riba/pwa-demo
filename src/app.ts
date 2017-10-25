@@ -10,7 +10,7 @@ class App {
 			preload: true,
 			autoplay: false,
 			loop: true,
-			volume: 0.6
+			volume: 0.8
 		});
 
 		this.fbApp = this.registerFirebase();

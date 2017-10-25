@@ -1,4 +1,4 @@
-var CACHE_NAME = 'hw008';
+var CACHE_NAME = 'hw' + CACHE_VERSION;
 
 var urlsToCache = [
   '/',

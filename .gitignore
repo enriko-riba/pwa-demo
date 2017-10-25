@@ -2,3 +2,5 @@ node_modules/
 dist/*.map
 dist/*.js
 dist/lib/
+dist/*.html
+dist/*.json

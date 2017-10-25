@@ -32,7 +32,9 @@ gulp.task('copy-libs', function () {
       .pipe(gulp.dest('./dist/lib/'));
 });
 
-var arrSrc = ['src/manifest.json', './src/*.html'];
+var arrSrc = ['src/manifest.json', 
+              'src/*.html',
+              'src/sw.js'];
 gulp.task('copy-src', function () {
   gulp.src(arrSrc, {base: 'src'})
       .pipe(gulp.dest('./dist/'));

@@ -12,3 +12,9 @@ gulp.task('sass', function () {
 gulp.task('sass:watch', function () {
   gulp.watch('*.scss', ['sass']);
 });
+
+
+var depLinker = require('dep-linker');
+gulp.task('link-dependencies', function () {
+  return depLinker.linkDependenciesTo('./dist/lib');
+});

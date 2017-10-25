@@ -10,6 +10,7 @@
     "@types/firebase": "^2.4.32",
     "@types/howler": "^2.0.5",
     "@types/jquery": "^3.2.1",
+    "dep-linker": "^1.0.24",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
     "system": "^2.0.1"

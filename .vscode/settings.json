@@ -1,2 +1,7 @@
 {
+    "files.exclude": {
+        "**/*.js": { "when": "$(basename).ts"},
+        "**/*.js.map": false,
+        "node_modules": true
+    }
 }

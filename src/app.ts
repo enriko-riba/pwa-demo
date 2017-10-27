@@ -1,10 +1,18 @@
-declare var firebase: any;
+import $ = require('jquery');
+//import * as firebase from "firebase";
+import firebase = require( "firebase" );
+import "./lib/firebase/firebase-database.js";
+import {Howl} from "howler";
 
-class App {
-	private fbApp: any;
+export class App {
+	private fbApp: firebase.app.App;
+	private realfbase;
+
+	constructor(){
+		this.realfbase = (<any>firebase).firebase;
+	}
 
 	public start(): void {
-
 		var howl = new Howl({
 			src: ["assets/Whiskey-on-the-Mississippi.mp3"],
 			preload: true,
@@ -15,7 +23,7 @@ class App {
 
 		this.fbApp = this.registerFirebase();
 		var $dkey = $("#demoKeyValue");
-		var dbRef = firebase.database().ref().child('demo-key');
+		var dbRef = this.realfbase.database().ref().child('demo-key');
 		dbRef.on('value', key => {
 			var newVal = key.val();
 			$dkey.text(newVal);
@@ -48,7 +56,7 @@ class App {
 	/*
      * Initializes Firebase
 	 */
-	private registerFirebase(): any {
+	private registerFirebase(): firebase.app.App {
 		var config = {
 			apiKey: "AIzaSyD4J9ZESbPmsDwJCluy8byuTf_8O498E0Y",
 			authDomain: "web-hw-demo.firebaseapp.com",
@@ -57,11 +65,11 @@ class App {
 			storageBucket: "",
 			messagingSenderId: "935594573141"
 		};
-		return firebase.initializeApp(config);
+		return  this.realfbase.initializeApp(config);
 	};
 
 	public registerServiceWorker = () => {
-		if ('serviceWorker' in navigator) {
+		if ('serviceWorker' in navigator) { 
 			navigator.serviceWorker.register('sw.js').then(function (registration) {
 				console.log('ServiceWorker registered with scope: ', registration.scope);
 			}, function (err) {
@@ -70,9 +78,3 @@ class App {
 		}
 	};
 }
-
-$(document).ready(() => {
-	var app = new App();
-	app.registerServiceWorker();
-	app.start();
-});

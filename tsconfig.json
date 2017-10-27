@@ -1,13 +1,13 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
+        "moduleResolution": "node",
         "alwaysStrict": false,
         "target": "es5",
         "sourceMap": true,
-        "outDir": "dist",
-        "lib": ["es2015","es2015.iterable", "dom"],
-        "types": [
-            "jquery", "howler","firebase"
-        ]
+        //"outDir": "dist",
+        "module": "amd",
+        "lib": ["es2015", "es2015.iterable", "dom"],
+        "baseUrl": "."
     }
 }

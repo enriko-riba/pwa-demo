@@ -1,3 +1,4 @@
+var CACHE_VERSION = '00011';
 var CACHE_NAME = 'hw' + CACHE_VERSION;
 
 var urlsToCache = [
@@ -7,11 +8,7 @@ var urlsToCache = [
   '/styles/site.css',
   '/app.js',
   '/assets/icon-512x512.png',
-  '/assets/st1.jpg'
-
-  , //  lib
-  '/lib/jquery-3.2.1.min.js',
-  '/lib/howler.min.js'
+  '/assets/st1.jpg' 
 ];
 
 self.addEventListener('install', function (event) {
